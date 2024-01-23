@@ -1,0 +1,54 @@
+.joinus-btn {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: $main-gradient;
+    font-family: $primary-font;
+    font-weight: $medium;
+    color: white;
+    transition: filter ease-in 200ms;
+
+    &:hover {
+        filter: brightness(50%);
+        cursor: pointer;
+    }
+}
+
+.hero-newsletter {
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+    
+
+    input {
+        background-color: $bg-color;
+        border: 2px solid $secondary-text-color;
+        border-radius: 10px;
+        padding: 0.5rem 3rem 0.5rem 1rem;
+        max-width: 400px;
+        width: 100%;
+        color: white;
+    }
+
+    button {
+        position: absolute;
+        border-radius: 10px;
+        aspect-ratio: 1;
+        height: 80%;
+        right: 0;
+        top: 10%;
+        transform: translateX(-10%);
+        border: none;
+        background: $main-gradient;
+        font-family: $primary-font;
+        font-weight: $medium;
+        color: white;
+        transition: filter ease-in 200ms;
+
+        &:hover {
+            filter: brightness(50%);
+            cursor: pointer;
+    }
+
+    }
+}

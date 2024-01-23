@@ -1,0 +1,39 @@
+nav {
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Remove overflow: hidden; */
+    h2 {
+        color: white;
+        font-family: $secondary-font;
+        font-weight: $bold;
+    }
+}
+
+.nav-links {
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 0 20px;
+        font-weight: $medium;
+        transition: background ease-in 300ms;
+        font-family: $primary-font;
+
+        &:hover {
+            background: #A531DC;
+            background: linear-gradient(to right, #A531DC 0%, #4300B1 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.sticky-nav {
+    position: fixed;
+    background-color: #111111;
+    top: 0;
+    width: 100%;
+}
