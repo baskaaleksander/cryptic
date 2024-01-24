@@ -11,7 +11,7 @@
 
     table {
         width: 100%;
-
+        border-collapse: collapse;
         thead {
             background: rgb(18,18,18);
             background: linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(20,20,20,1) 100%);
@@ -22,4 +22,12 @@
             padding: 10px 0;
         }
     }
+}
+
+.above-zero {
+    color: green;
+}
+
+.below-zero {
+    color: red;
 }

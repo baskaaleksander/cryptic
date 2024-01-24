@@ -6,6 +6,7 @@ import WhyUs from './components/WhyUs';
 import Pricing from './components/Pricing';
 import LiveRating from './components/LiveRating';
 import JoinUs from './components/JoinUs';
+import Footer from './components/Footer';
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
     <Pricing />
     <LiveRating />
     <JoinUs />
+    <Footer />
     </>
   )
 }
