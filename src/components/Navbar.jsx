@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -19,18 +20,17 @@ const Navbar = () => {
       window.removeEventListener('scroll', throttleScroll);
     };
   }, []);
-
   return (
-    <nav>
+    <nav className={scrollPosition >= 100 && "sticky-nav"}>
       <h2 className='nav-logo'>
-        <span className='gradient-span'>cryptic</span>.ai
+      <Link to="hero" smooth={true} offset={-100} duration={500}><span className='gradient-span'>cryptic</span>.ai</Link>
       </h2>
       <div className='nav-links'>
-        <a href='#why-us'>why us?</a>
-        <a href='#pricing'>pricing</a>
-        <a href='#live-rating'>live rating</a>
+      <Link to="whyus" smooth={true} offset={-100} duration={500}><a href=''>why us?</a></Link>
+        <Link to="pricing" smooth={true} offset={-100} duration={500}><a href=''>pricing</a></Link>
+        <Link to="liverating" smooth={true} offset={-100} duration={500}><a href=''>live rating</a></Link>
       </div>
-      <button className='joinus-btn'>join us!</button>
+      <Link to="joinus" smooth={true} offset={-100} duration={500}><button className='joinus-btn'>join us!</button></Link>
     </nav>
   );
 };

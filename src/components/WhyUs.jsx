@@ -1,8 +1,11 @@
 import React from 'react'
+import { Element } from 'react-scroll';
+
 
 const WhyUs = () => {
   return (
-    <div class="grid-container">
+    <Element name="whyus">
+    <div className="grid-container">
         <div class="one">
             <h2>
                 Reliability
@@ -11,7 +14,7 @@ const WhyUs = () => {
 
             </p>
         </div>
-        <div class="two">
+        <div className="two">
             <h2>
                 Security
             </h2>
@@ -19,7 +22,7 @@ const WhyUs = () => {
 
             </p>
         </div>
-        <div class="three">
+        <div className="three">
             <h2>
                 Speed
             </h2>
@@ -27,7 +30,7 @@ const WhyUs = () => {
 
             </p>
         </div>
-        <div class="four">
+        <div className="four">
             <h2>
                 Support
             </h2>
@@ -35,7 +38,7 @@ const WhyUs = () => {
 
             </p>
         </div>
-        <div class="five">
+        <div className="five">
             <h2>
                 Transparency
             </h2>
@@ -43,7 +46,7 @@ const WhyUs = () => {
 
             </p>
         </div>
-        <div class="six">
+        <div className="six">
             <h2>
                 Simplicity
             </h2>
@@ -52,6 +55,7 @@ const WhyUs = () => {
             </p>
         </div>
     </div>
+    </Element>
   )
 }
 

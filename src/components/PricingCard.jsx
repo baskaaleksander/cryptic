@@ -2,6 +2,7 @@ import React from 'react'
 import { GoCheck } from "react-icons/go";
 
 
+
 const PricingCard = ( {card} ) => {
 
   const featuresActive = card.featuresactive.map((feature, index) => {

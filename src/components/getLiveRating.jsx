@@ -21,7 +21,9 @@ export const getLiveRating = () => {
     // Populate tableElements after liveRating has been updated
     for (let i = 0; i < liveRating.length; i++) {
       tableElements.push(
-        <tr key={i}>
+        <tr key={i} onClick={() => {
+          location.href = `https://www.coingecko.com/en/coins/${liveRating[i].name.toLowerCase().replace(/\s/g, '-')}`
+        }}>
           <td><img src={liveRating[i].image} alt='logo' className='live-rating-img'/></td>
           <td>{liveRating[i].name}</td>
           <td>{liveRating[i].current_price} EUR</td>

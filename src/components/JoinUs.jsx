@@ -1,8 +1,11 @@
 import React from 'react'
 import image from '../assets/joinusimg.png'
+import { Element } from 'react-scroll';
+
 
 const JoinUs = () => {
   return (
+    <Element name="joinus">
     <div className='join-us'>
         <div className='join-us-left'>
             <h2>Join to our <span className='gradient-span'>discord</span> now!</h2>
@@ -11,6 +14,7 @@ const JoinUs = () => {
         </div>
     <img src={image} alt='join us' className='join-us-img'/>
     </div>
+    </Element>
   )
 }
 

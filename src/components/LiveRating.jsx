@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import { getLiveRating } from './GetLiveRating'
+import { Element } from 'react-scroll';
 
 const LiveRating = () => {
-    const [loading, setLoading] = useState(true);
     const tableElements = getLiveRating();
     const [items, setItems] = useState(10);
-    const [activeButton, setActiveButton] = useState(null); // New state for active button
+    const [activeButton, setActiveButton] = useState(null);
 
     function buttonHandler(e) {
         setItems(e.target.innerHTML * 10);
@@ -17,11 +17,12 @@ const LiveRating = () => {
     const pages = tableElements.length / 10;
     let pageButtons = [];
     for (let i = 0; i < pages; i++) {
-        pageButtons.push(<button key={i} onClick={buttonHandler} className={i === 0 ? "live-rating-btn-active" : "live-rating-btn"}>{i+1}</button>)
+        pageButtons.push(<button key={i} onClick={buttonHandler} className="live-rating-btn">{i+1}</button>)
     }
 
 
   return (
+    <Element name="liverating">
     <div className='live-rating'>
         <table>
             <thead>
@@ -40,7 +41,8 @@ const LiveRating = () => {
         <div className='live-rating-buttons'>
             {pageButtons}
         </div>
-    </div>   
+    </div>
+    </Element>   
   )
 }
 

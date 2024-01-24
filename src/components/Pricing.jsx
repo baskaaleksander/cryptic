@@ -1,5 +1,6 @@
 import React from 'react'
 import PricingCard from './PricingCard'
+import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 const Pricing = () => {
   const pricingCardsInfo = [
@@ -28,9 +29,11 @@ const Pricing = () => {
   })
 
   return (
+    <Element name="pricing">
     <div className='pricing-container'>
         {pricingCards}
     </div>
+    </Element>
   )
 }
 
