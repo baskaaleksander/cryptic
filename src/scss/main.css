@@ -297,4 +297,25 @@ li {
   color: #7a7a7a;
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.live-rating-img {
+  width: 60px;
+}
+
+.live-rating {
+  width: 80%;
+  margin: 75px 10%;
+}
+.live-rating table {
+  width: 100%;
+}
+.live-rating table thead {
+  background: rgb(18, 18, 18);
+  background: linear-gradient(90deg, rgb(18, 18, 18) 0%, rgb(20, 20, 20) 100%);
+  color: #7a7a7a;
+}
+.live-rating table th, .live-rating table td {
+  text-align: center;
+  padding: 10px 0;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+.live-rating-img {
+    width: 60px;
+}
+
+.live-rating {
+    width: 80%;
+    margin: 75px 10%;
+
+    table {
+        width: 100%;
+
+        thead {
+            background: rgb(18,18,18);
+            background: linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(20,20,20,1) 100%);
+            color: $secondary-text-color;
+        }
+        th, td {
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+}
