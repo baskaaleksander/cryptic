@@ -195,6 +195,27 @@ nav h2 {
   cursor: pointer;
 }
 
+.live-rating-btn {
+  margin: 0 5px;
+  width: 30px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  border: none;
+  background: linear-gradient(to right, #A531DC 0%, #4300B1 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  transition: filter ease-in 200ms;
+}
+.live-rating-btn:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+.live-rating-btn-active {
+  filter: brightness(50%);
+}
+
 .gradient-span {
   background: #A531DC;
   background: linear-gradient(to right, #A531DC 0%, #4300B1 100%);
@@ -306,6 +327,9 @@ li {
 .live-rating {
   width: 80%;
   margin: 75px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .live-rating table {
   width: 100%;

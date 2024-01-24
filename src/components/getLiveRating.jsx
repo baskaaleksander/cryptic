@@ -19,17 +19,17 @@ export const getLiveRating = () => {
     }, []);
   
     // Populate tableElements after liveRating has been updated
-    for (let i = 0; i < 6 && i < liveRating.length; i++) {
+    for (let i = 0; i < liveRating.length; i++) {
       tableElements.push(
         <tr key={i}>
           <td><img src={liveRating[i].image} alt='logo' className='live-rating-img'/></td>
           <td>{liveRating[i].name}</td>
-          <td>{liveRating[i].current_price}</td>
-          <td>{liveRating[i].market_cap}</td>
-          <td>{liveRating[i].price_change_percentage_24h}</td>
+          <td>{liveRating[i].current_price} EUR</td>
+          <td>{liveRating[i].market_cap} EUR</td>
+          <td>{liveRating[i].price_change_percentage_24h}%</td>
         </tr>
       );
     }
-    
+
   return tableElements
 }

@@ -1,21 +1,25 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import { getLiveRating } from './GetLiveRating'
 
 const LiveRating = () => {
-    const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(true);
     const tableElements = getLiveRating();
+    const [items, setItems] = useState(10);
+    const [activeButton, setActiveButton] = useState(null); // New state for active button
 
-    // useEffect(() => {
-    //     const fetchLiveRating = async () => {
-    //         const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=6&page=${page}&sparkline=false&locale=en`)
-    //         const data = await res.json()
-    //         setData(data)
-    //     }
-    //     fetchLiveRating()
-    
-    // }, [])
-       
+    function buttonHandler(e) {
+        setItems(e.target.innerHTML * 10);
+        if (activeButton) activeButton.classList.remove('live-rating-btn-active');
+        e.target.classList.add('live-rating-btn-active');
+        setActiveButton(e.target);
+    }
+    const pageElements = [...tableElements].splice(items - 10, 10)
+    const pages = tableElements.length / 10;
+    let pageButtons = [];
+    for (let i = 0; i < pages; i++) {
+        pageButtons.push(<button key={i} onClick={buttonHandler} className={i === 0 ? "live-rating-btn-active" : "live-rating-btn"}>{i+1}</button>)
+    }
+
 
   return (
     <div className='live-rating'>
@@ -30,9 +34,12 @@ const LiveRating = () => {
                 </tr>
             </thead>
             <tbody>
-                {tableElements}
+                {pageElements}
             </tbody>
         </table>
+        <div className='live-rating-buttons'>
+            {pageButtons}
+        </div>
     </div>   
   )
 }

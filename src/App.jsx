@@ -5,6 +5,7 @@ import { scrollSpy } from 'react-scroll';
 import WhyUs from './components/WhyUs';
 import Pricing from './components/Pricing';
 import LiveRating from './components/LiveRating';
+import JoinUs from './components/JoinUs';
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
     <WhyUs />
     <Pricing />
     <LiveRating />
+    <JoinUs />
     </>
   )
 }

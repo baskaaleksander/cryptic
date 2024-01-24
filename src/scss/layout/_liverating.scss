@@ -5,6 +5,9 @@
 .live-rating {
     width: 80%;
     margin: 75px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     table {
         width: 100%;
