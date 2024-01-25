@@ -17,7 +17,7 @@ const Navbar = () => {
 
 const NavMobile = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [isOpen, setOpen] = useState(true)
+  const [isOpen, setOpen] = useState(false)
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);
