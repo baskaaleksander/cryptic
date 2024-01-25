@@ -18,7 +18,6 @@ export const getLiveRating = () => {
       fetchLiveRating();
     }, []);
   
-    // Populate tableElements after liveRating has been updated
     for (let i = 0; i < liveRating.length; i++) {
       tableElements.push(
         <tr key={i} onClick={() => {
@@ -28,7 +27,7 @@ export const getLiveRating = () => {
           <td>{liveRating[i].name}</td>
           <td>{liveRating[i].current_price} EUR</td>
           <td>{liveRating[i].market_cap} EUR</td>
-          <td className={liveRating[i].price_change_percentage_24h > 0 ? "above-zero" : "below-zero"}>{liveRating[i].price_change_percentage_24h}%</td>
+          <td className={liveRating[i].price_change_percentage_24h > 0 ? "above-zero" : "below-zero"}>{Math.floor(liveRating[i].price_change_percentage_24h * 100) / 100}%</td>
         </tr>
       );
     }

@@ -19,6 +19,18 @@
 
     img {
         width: 50%;
+
+        
+    }
+
+    @media (max-width: 968px) {
+        display: flex;
+        margin: 75px auto;
+
+        img {
+            display: none;
+        }
+    
     }
 }
 
@@ -26,6 +38,10 @@
     text-align: center;
     h2 {
         font-size: $font-size-xxxxl;
+
+        @media (max-width: 550px)
+        {
+            font-size: $font-size-xxxl;}
     }
 
     P {

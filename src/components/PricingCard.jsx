@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoCheck } from "react-icons/go";
+import { Link } from 'react-scroll';
 
 
 
@@ -26,7 +27,7 @@ const PricingCard = ( {card} ) => {
           {featuresInactive}
         </ul>
         <h3>{card.price}</h3>
-        <button className='joinus-btn'>Join us now!</button>
+        <Link to="joinus" smooth={true} offset={-100} duration={500}><button className='joinus-btn'>Join us now!</button></Link>
     </div>
   )
 }

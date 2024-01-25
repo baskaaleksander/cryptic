@@ -11,6 +11,8 @@
 
     .hero-spline {
         height: 80%;
+
+
     }
 
     .hero-left {
@@ -18,11 +20,26 @@
         flex-direction: column;
         h2 {
             font-size: $font-size-xxxxl;
+
+            @media (max-width: 550px)
+            {
+                font-size: $font-size-xxl;}
         }
 
         h3 {
             font-weight: $medium;
             color: $secondary-text-color;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        .hero-spline {
+            display: none;
         }
     }
 }
@@ -38,6 +55,16 @@
 .hero-stats {
     display: flex;
     padding-top: 7.5rem;
+
+    @media (max-width: 1100px) {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 468px) {
+        font-size: $font-size-xs;
+        text-align: center;
+    }
 }
 
 .divider {

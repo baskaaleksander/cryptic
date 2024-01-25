@@ -10,6 +10,16 @@ nav {
         font-family: $secondary-font;
         font-weight: $bold;
     }
+    .nav-logo {
+        cursor: pointer;
+    }
+
+    @media (max-width: 970px) {
+        z-index: 1001;
+        position: absolute;
+        flex-direction: column;
+        background-color: $bg-color;
+    }
 }
 
 .nav-links {
@@ -28,6 +38,14 @@ nav {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        @media (max-width: 930px) {
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
@@ -38,3 +56,5 @@ nav {
     width: 100%;
     z-index: 1000;
 }
+
+
