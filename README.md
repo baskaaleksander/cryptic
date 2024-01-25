@@ -16,5 +16,5 @@
 <h2>Screenshots</h2>
 
 <div align='center'>
-    <img src='hhttps://github.com/baskaaleksander/cryptic/blob/main/screenshot/screenshot.png' />
+    <img src='https://raw.githubusercontent.com/baskaaleksander/cryptic/main/screenshot/screenshot.png' />
 </div>
