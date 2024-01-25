@@ -22,7 +22,7 @@ const WhyUs = () => {
                     Reliability
                 </h2>
                 <p>
-
+                    We have almost 10 years of experience in the cryptocurrency market. We have been through many ups and downs and we know how to deal with them. We are here to help you!
                 </p>
             </div>
             <div className="two">
@@ -30,7 +30,7 @@ const WhyUs = () => {
                     Security
                 </h2>
                 <p>
-
+                    We are using the most advanced security systems to protect your data. We are also using the most advanced encryption methods to protect your data.
                 </p>
             </div>
             <div className="three">
@@ -38,7 +38,7 @@ const WhyUs = () => {
                     Speed
                 </h2>
                 <p>
-
+                    We are using the most advanced technology to make sure that your data is always up to date. We are also using the most advanced encryption methods to protect your data.
                 </p>
             </div>
             <div className="four">
@@ -46,7 +46,7 @@ const WhyUs = () => {
                     Support
                 </h2>
                 <p>
-
+                    We are always here to help you. We are always here to answer your questions. We are always here to help you.
                 </p>
             </div>
             <div className="five">
@@ -54,7 +54,7 @@ const WhyUs = () => {
                     Transparency
                 </h2>
                 <p>
-
+                    Every our trade is visible to everyone. We are not hiding anything from you. We are not hiding anything from you.
                 </p>
             </div>
             <div className="six">
@@ -62,7 +62,7 @@ const WhyUs = () => {
                     Simplicity
                 </h2>
                 <p>
-
+                    You don't need to be a professional trader to use our platform. You don't need to be a professional trader to use our platform.
                 </p>
             </div>
         </div>
