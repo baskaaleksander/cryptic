@@ -1,8 +1,21 @@
-# React + Vite
+<h2>About my project</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>Cryptic is a fully responsive web landing page made in React using CoinGecko API to gather the live data about cryptocurrencies.</p>
 
-Currently, two official plugins are available:
+<b>Live demo: </b><a href="https://cryptic-navy.vercel.app/">Click me!</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Built using:</h3>
+<ul>
+    <li>React</li>
+    <li>HTML</li>
+    <li>SCSS</li>
+    <li>Framer Motion</li>
+    <li>Coingecko API</li>
+</ul>
+
+<h2>Screenshots</h2>
+
+<div align='center'>
+    <img src='hhttps://github.com/baskaaleksander/cryptic/blob/main/screenshot/screenshot.png?raw=true' />
+
+</div>
