@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { getLiveRating } from './GetLiveRating'
+import { getLiveRating } from './getLiveRating'
 import { Element } from 'react-scroll';
 import { motion } from 'framer-motion';
 
