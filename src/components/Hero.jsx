@@ -4,6 +4,7 @@ import { GoArrowRight } from "react-icons/go";
 import { Element } from 'react-scroll';
 
 
+
 const Hero = () => {
   return (
     <Element name="hero">

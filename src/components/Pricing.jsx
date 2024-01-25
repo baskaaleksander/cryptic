@@ -1,6 +1,7 @@
 import React from 'react'
 import PricingCard from './PricingCard'
 import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const pricingCardsInfo = [
@@ -29,11 +30,22 @@ const Pricing = () => {
   })
 
   return (
-    <Element name="pricing">
-    <div className='pricing-container'>
-        {pricingCards}
-    </div>
-    </Element>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 100 }
+      }}
+    >
+      <Element name="pricing">
+      <div className='pricing-container'>
+          {pricingCards}
+      </div>
+      </Element>
+    </motion.div>
   )
 }
 

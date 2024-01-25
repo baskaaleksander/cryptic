@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { getLiveRating } from './GetLiveRating'
 import { Element } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 const LiveRating = () => {
     const tableElements = getLiveRating();
@@ -22,27 +23,38 @@ const LiveRating = () => {
 
 
   return (
-    <Element name="liverating">
-    <div className='live-rating'>
-        <table>
-            <thead>
-                <tr>
-                    <td>Logo</td>
-                    <td>Name</td>
-                    <td>Price</td>
-                    <td>Market price</td>
-                    <td>Change</td>
-                </tr>
-            </thead>
-            <tbody>
-                {pageElements}
-            </tbody>
-        </table>
-        <div className='live-rating-buttons'>
-            {pageButtons}
-        </div>
-    </div>
-    </Element>   
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 100 }
+      }}
+    >
+        <Element name="liverating">
+            <div className='live-rating'>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Logo</td>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Market price</td>
+                            <td>Change</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {pageElements}
+                    </tbody>
+                </table>
+                <div className='live-rating-buttons'>
+                    {pageButtons}
+                </div>
+            </div>
+        </Element>
+    </motion.div>   
   )
 }
 
